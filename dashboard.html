@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon espace client - APC3D</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1>Mon espace client</h1>
+  </header>
+
+  <nav class="menu">
+    <ul>
+      <li class="active" onclick="showTab('commandes')">Commandes</li>
+      <li onclick="showTab('devis')">Devis</li>
+      <li onclick="showTab('factures')">Factures</li>
+      <li onclick="showTab('compte')">Mon compte</li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="commandes" class="tab active">
+      <h2>Mes commandes</h2>
+      <p>Vous retrouverez ici toutes vos commandes passées.</p>
+      <!-- Exemple de commande -->
+      <div class="card">
+        <p><strong>Commande :</strong> C5231</p>
+        <p><strong>Statut :</strong> En production</p>
+        <p><strong>Date :</strong> 30/04/2025</p>
+        <button>Voir le détail</button>
+      </div>
+    </section>
+
+    <section id="devis" class="tab">
+      <h2>Mes devis</h2>
+      <p>Vos devis en attente de validation.</p>
+    </section>
+
+    <section id="factures" class="tab">
+      <h2>Mes factures</h2>
+      <p>Retrouvez ici toutes vos factures générées.</p>
+    </section>
+
+    <section id="compte" class="tab">
+      <h2>Mes informations</h2>
+      <p>Modifier votre adresse, mot de passe, etc.</p>
+    </section>
+  </main>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
